@@ -1,0 +1,242 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MyBage</title>
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+<script src="jquery-3.6.0.min.js"></script>
+<link rel =""  href ="" />
+<style>
+	body {
+		margin :0;
+		padding : 0;
+		}
+
+	header{
+		color:#fff;
+		background-color:#284b63;
+		padding:80px 0;
+		text-align:center;
+		} 
+		h1{
+		/* font-size:48px; */
+		font-size: 7vw;
+		margin: 0 0 16px 0;
+		font-variant: small-caps;
+		}
+		h2{
+		font-weight: 300;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    font-size: 2.7vw;
+	font-variant: small-caps;
+	}
+
+	
+		
+/*لينكات حديثه*/
+.con{width: 250px;width: 22vw;height: 50px;margin: 10px auto;font-family: sans-serif;font-weight: bold;text-align: center;color: #F9F4F4;}
+.con .box{height: 50px;line-height: 50px;position: initial;z-index: 2}
+.con a{display: block;;width: 100%;height: 50px;line-height: 50px;visibility:hidden;
+background-color: #333;color: #fff;text-decoration: none;position: relative;top: -50px;z-index: 1}
+.con:hover a{top: 0;visibility:visible}
+.no .box{background-color: #3b5998}
+.tr .box{background-color: #62c8f8;font-size: 2vw;}
+.tr a{transition: all .5s ease-in-out}
+.an .box{background-color: #c8302a;}
+.an:hover a{transform-origin: top;animation: swinging 2.5s infinite ease-in-out }
+@keyframes swinging
+{
+	0%{transform:rotateX(-50deg)} 20%{transform: rotateX(50deg)}
+	40%,80%{transform: rotateX(-30deg)}
+	60%{transform: rotateX(30deg)} 100%{transform: rotateX(0deg)}					  
+}
+/*لينكات حديثه*/
+
+.container{
+	margin: 0 auto;
+    padding: 0 20px;
+    /* max-width: 900px; */
+    max-width: 95vw;
+	}
+
+section{
+	padding:40px 0;
+	text-align:center;
+	} 
+.future{
+	background-color:#fff;
+	color:#000
+	}
+	.fut{
+		width: 32%;
+    display: inline-block;
+    /* font-size: 20px; */
+    font-size: 2vw;
+    text-transform: capitalize;
+	}
+.fut img{
+    /* width: 50%; */
+    width: 16vw;
+}
+.quote{
+	background-color:#459DA0;
+	color:#fff;
+	}
+blockquote{
+margin:0;
+padding:0;
+text-align:center;
+}
+blockquote p{
+    margin: 0 0 5px 0;
+    /* font-size: 30px; */
+    font-size: 3vw;
+}
+blockquote cite{
+	font-size: 16px;
+    font-size: 1.9vw;
+    font-style: italic;
+}
+blockquote cite:before{
+content:'-';
+margin-right:5px;
+}
+footer{
+	background-color: #353535;
+    padding: 32px 0;
+    text-align: center;
+    color: #868686;
+    /* font-size: 12px; */
+    font-size: 1.5vw;
+	} 
+footer ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+footer li{
+display:inline-block;
+}
+footer li a {
+	padding: 6px;
+    /* font-size: 14px; */
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: #ffffff;
+}
+footer li a:hover{
+	color:white;
+}
+footer p{
+	font-size: 2vw;
+}
+
+ @media screen and (min-width: 800px) and (max-width: 1024px) {
+   body {
+     background-color: blue;
+  }
+}
+ @media screen and (max-width:480px){
+	body {
+		background-color: blue;}
+
+h1{
+/* font-size:32px; */
+margin:0 0 8px 0;
+}
+/* h2{
+font-size:18px;
+} */
+section{
+padding:25px 0 15px 0;
+}
+.fut{
+width:100%;
+display:flex;
+algin-items:center;
+justify-content:center;
+text-align:left;
+margin:0 0 10px 0;
+font-size:16px;
+}
+.fut img{
+/* width:15%; */
+min-width:60px;
+margin-right:20px;
+}
+footer{
+padding:30px 0 10px 0;
+}
+footer li{
+display:block;
+margin:5px 0;
+}
+.quote{
+padding:30px 0;}
+blockquote p{
+font-size:18px;}
+blockquote cite{
+font-size:13px
+}  
+footer li a {
+	font-size: 3vw;
+}
+footer p {
+    font-size: 4vw;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+<header>
+	<h1>AWESOME APP</h1>
+	<h2>This app will change your life !</h2>
+	<div class="con tr">
+		<div class="box">Download Now</div>
+			<a href="#">link1</a>
+			<a href="#">link2</a>
+			<a href="#">link3</a> 
+	</div>
+</header>
+
+<section  class ="future"> 
+<div class ="container">
+<div class ="fut">
+<img alt="" src="about_us.png"/>
+<p>An awesome future</p>
+</div>
+<div class ="fut">
+<img alt="" src="about_us.png"/>
+<p>An awesome future</p>
+</div>
+<div class ="fut">
+<img alt="" src="about_us.png"/>
+<p>An awesome future</p>
+</div>
+
+</div>
+ </section>
+<section  class ="quote" > 
+<blockquote class="container">
+<p>"Some great quote !"</p>
+<cite>Satisfied Customer</cite>
+</blockquote>
+ </section>
+<footer>
+<div class ="container">
+<ul>
+<li><a   href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contacts</a></li>
+</ul>
+<p>@ All rights reserved</p>
+</div>
+</footer>
+</body>
+</html>
